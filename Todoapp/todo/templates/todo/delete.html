@@ -1,0 +1,8 @@
+<h1>This is Delete page</h1>
+
+<form method="POST" action="">
+    {% csrf_token %}
+    <p>Are you sure you want to delete {{todo}}</p>
+    <a href="{% url 'home' %}">Idi Nazad</a>
+    <input type="submit" name="delete">
+</form>

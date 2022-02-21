@@ -1,0 +1,9 @@
+<h1>Ovo je update page</h1>
+
+<form method="POST" action="">
+    {% csrf_token %}
+    {{form}}    
+    <input type="submit" name="update">
+</form>
+
+<a href="{% url 'home' %}">IDI NAZAD</a>
